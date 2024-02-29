@@ -20,9 +20,9 @@ body{
     background-color: var(--color-mrrom-escuro);
     color: var(--color-leite);
 }
-div.rolagem{
+nav.rolagem{
     transition: 1s;
-    background-color: rgba(60, 60, 60, 0.572);
+    background-color: rgba(55, 55, 55, 0.663);
 }
 
 nav{
@@ -37,6 +37,7 @@ nav, .navgation{
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: all.5s;
 }
 .img-logo{
     width: 70px;
@@ -51,10 +52,10 @@ nav, .navgation{
     text-decoration: none;
     color: var(--color-leite);
     font-weight: bold;
-    transition: 1s;
+    transition: all.5s;
 }
 .navgation a:hover{
-    background-color: rgba(106, 106, 106, 0.41);
+    background-color: rgba(92, 89, 89, 0.41);
     padding: 10px;
     border-radius: 20%;
 }
@@ -77,14 +78,14 @@ section{
     background-attachment: fixed;
     margin-top: 5px;
     width: 100%;
-    height: 400px;
+    height: 450px;
     transition: 1s;
 }
 
 .vidro{
     background-color: rgba(0, 0, 0, 0.453);
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 .texto-topo{
     width: 400px;
@@ -96,6 +97,84 @@ section{
     margin-bottom: 20px;
     font-size: 4.1em;
 }
+.texto-topo p {
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+
+/*card animado*/
+main{
+    display: flex;
+    padding: 20px;
+}
+.container .link{
+    text-decoration: none;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.card{
+    background-image: linear-gradient(#84837F, #453A24, #7E7975);
+    color: var(--color-marrom);
+    overflow: hidden;
+    border-radius: 3%;
+    max-width: 360px;
+    cursor: pointer;
+}
+.card .img{
+    background-image: url(/imagens/Screenshot_4.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3%;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+}
+.card:hover .img{
+    opacity: 1;
+    width: 365px;
+}
+.card .img span{
+    font-size: 2em;
+    font-style: italic;
+}
+.card .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s;
+}
+.card:hover .content{
+    padding: 20px;
+    height: 100px;
+}
+.content .title {
+    font-size: 2.3em;
+    font-weight: bolder;
+}
+.content p {
+    color: rgb(252, 252, 252);
+    font-family: initial;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.card .content .desc{
+    font-weight: 100;
+    opacity: .7;
+}
+.card .arrow{
+    padding: 15px;
+    font-size: 28px;
+}
+
 
 
 
@@ -108,7 +187,7 @@ section{
         position: absolute;
         flex-direction: column;
         top: 0;
-        height: 100vw;
+        height: 1000vw;
         width: 35vw;
         padding: 1em;
         background-color: var(--color-laranja);
@@ -117,6 +196,9 @@ section{
     }
     .texto-topo{
         margin: auto;
+    }
+    nav.rolagem{
+        background-color: transparent;
     }
 }
 
