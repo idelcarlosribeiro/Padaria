@@ -17,7 +17,7 @@
     padding: 0;
 }
 body{
-    background-color: var(--color-mrrom-escuro);
+    background-image: radial-gradient(#8C501C, #BF9E80, #592F16);
     color: var(--color-leite);
 }
 nav.rolagem{
@@ -76,16 +76,25 @@ section{
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 5px;
     width: 100%;
-    height: 450px;
+    height: 350px;
     transition: 1s;
+}
+main{
+    background-image: url(/imagens/selecao-de-bolos-para-o-cafe-da-manha-na-confeitaria-da-padaria_124507-84912.jpg);
+    border-radius: 5px;
+    width: 95%;
+    margin: auto;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.284);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .vidro{
     background-color: rgba(0, 0, 0, 0.453);
     width: 100%;
-    height: 450px;
+    margin-bottom: 10px;
+    height: 350px;
 }
 .texto-topo{
     width: 400px;
@@ -123,7 +132,7 @@ main{
     min-height: 50vh;
 }
 .card{
-    background-image: linear-gradient(#84837F, #453A24, #7E7975);
+    background-image: linear-gradient(#84837F, #9a6d14, #7E7975);
     color: rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 3%;
