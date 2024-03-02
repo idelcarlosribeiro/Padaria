@@ -17,8 +17,8 @@
     padding: 0;
 }
 body{
-    background-image: radial-gradient(#8C501C, #BF9E80, #592F16);
-    color: var(--color-leite);
+    background-color: #8C501C;
+    background-size: cover;
 }
 nav.rolagem{
     transition: 1s;
@@ -206,7 +206,7 @@ main{
 
 
 footer{
-    background-color: #111;
+    background-image: linear-gradient(to top left, #D9A679,#D97E4A,#593520 );
     height: auto;
     padding: 40px;
     color: white;
