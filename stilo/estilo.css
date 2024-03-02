@@ -83,7 +83,7 @@ section{
 main{
     background-image: url(/imagens/selecao-de-bolos-para-o-cafe-da-manha-na-confeitaria-da-padaria_124507-84912.jpg);
     border-radius: 5px;
-    width: 95%;
+    width: 90%;
     margin: auto;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.284);
     background-size: cover;
@@ -165,6 +165,12 @@ main{
     background-image: url(/imagens/Screenshot_1.png);
     background-position: top,left;
 }
+#img5{
+    background-image: url(/imagens/Screenshot_2.png);
+}
+#img6{
+    background-image: url(/imagens/Screenshot_6.png);
+}
 .card .img span{
     font-size: 2em;
     font-style: italic;
@@ -199,7 +205,78 @@ main{
 }
 
 
-
+footer{
+    background-color: #111;
+    height: auto;
+    padding: 40px;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-content > p, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nethu{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sociais{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.sociais li {
+    margin: 0 10px;
+}
+.sociais a {
+    text-decoration: none;
+    color: white;
+}
+.sociais a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.sociais a:hover{
+    color: aqua;
+}
+.footer-bottom{
+    width: 100%;
+    background: #000;
+    border-radius: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 
 
 @media screen and (max-width: 768px ) {
