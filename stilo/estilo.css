@@ -72,7 +72,6 @@ nav, .navgation{
 section{
     background-image: url(/imagens/bacgrud.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
@@ -83,10 +82,9 @@ section{
 main{
     background-image: url(/imagens/selecao-de-bolos-para-o-cafe-da-manha-na-confeitaria-da-padaria_124507-84912.jpg);
     border-radius: 5px;
-    width: 90%;
+    width: 98%;
     margin: auto;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.284);
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -119,7 +117,6 @@ main{
     margin: auto;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 .container .link{
     text-decoration: none;
@@ -129,7 +126,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
+    margin: 20px;
 }
 .card{
     background-image: linear-gradient(#84837F, #9a6d14, #7E7975);
