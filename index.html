@@ -29,150 +29,181 @@
                     </svg>
                 </button>
                 <a href="#">Home</a>
-                <a href="#produtos">Produtos</a>
+                <a href="#container-produtos">Produtos</a>
                 <a href="#">Contato</a>
+                <div id="buscar">
+                    <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar..." onkeyup="pesquisar()">
+                    <i onclick="lupa()" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <i onclick="lupa()" class="fa-solid fa-magnifying-glass" id="ativo"></i>
             </div>
         </nav>
     </header>
-        <section tabindex="0" onclick="closerSiderbar()" id="cont">
-            <div class="vidro">
-                <div class="texto-topo">
-                    <h1>Padaria bom fermento</h1>
-                    <p>Nossos paens são feito com ingredientes de qualida com muito amor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas sapiente ab suscipit, velit a minima optio nam ad ipsa labore accusantium voluptas quisquam veritatis maiores dolor repudiandae veniam libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <section tabindex="0" onclick="closerSiderbar()" id="cont">
+
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                
+                <div class="slide first">
+                    <div id="img-baner-slide1"></div>
+                    <div class="texto-topo">
+                        <h1>Padaria bom fermento</h1>
+                        <p>Nossos paens são feito com ingredientes de qualidade com muito amor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas sapiente ab suscipit, velit a minima optio nam ad ipsa labore accusantium voluptas quisquam veritatis maiores dolor repudiandae veniam libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="img-baner-slide2"></div>
+                    <div class="texto-topo">
+                        <h1>Padaria bom fermento</h1>
+                        <p>Nossos paens são feito com ingredientes de qualidade com muito amor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas sa </p>
+                    </div>
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+                
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <main >
+            <div id="sobre-nos">
+                <div id="container-img-sobre">
+                    <img src="imagens/pexels-zvolskiy-2253643.jpg" alt="">
+                </div>
+                <div id="container-texto-sobre">
+                    <h1>Seu dia começa aqui</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione excepturi quidem quasi tempore? Temporibus reiciendis ratione repellendus architecto obcaecati tenetur suscipit atque doloremque veniam odit! Saepe nihil voluptates sit tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quas asperiores commodi est nam? Maiores et repudiandae nobis ea ab accusamus! Vel totam consequuntur quibusdam laborum cupiditate dolor rem quaerat!</p>
                 </div>
             </div>
-            <main id="produtos">
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div class="img">
-                                <span>Croissant</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div id="img2" class="img">
-                                <span>Pão de queijo</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
+            <div id="container-produtos">
+                <div id="container-texto-prod">
+                    <h1 class="texto-animado">Alguns de nossos produtos</h1>
                 </div>
+                
+                <div id="produtos">
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div class="img">
+                                    <span>Croissant</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div id="img2" class="img">
+                                    <span>Pão de queijo</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div id="img3" class="img">
+                                    <span>Pão fofinho</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div id="img4" class="img">
+                                    <span>Pão de fermentação</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div id="img5" class="img">
+                                    <span>Pão</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container hidden">
+                        <a class="link" href="#">
+                            <div class="card">
+                                <div id="img6" class="img">
+                                    <span>Bolo</span>
+                                </div>
+                                <div class="content">
+                                    <span class="title">Ta esperando o que?</span>
+                                    <p class="desc">
+                                        Nos chame em nosso Whatsapp e reseve já o seu!❤️
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div id="img3" class="img">
-                                <span>Pão fofinho</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div id="img4" class="img">
-                                <span>Pão de fermentação</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div id="img5" class="img">
-                                <span>Pão</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="container">
-                    <a class="link" href="#">
-                        <div class="card">
-                            <div id="img6" class="img">
-                                <span>Bolo</span>
-                            </div>
-                            <div class="content">
-                                <span class="title">Ta esperando o que?</span>
-                                <p class="desc">
-                                    Nos chame em nosso Whatsapp e reseve já o seu!❤️
-                                </p>
-                            </div>
-                            <div class="arrow">
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </main>
-            <footer>
-                <div class="footer-content">
-                    <h3>code opacit</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae, accusamus laboriosam aut alias placeat similique eum doloribus fugit, deserunt dolorum. Totam eos dolores qui aspernatur culpa aliquam quod quas.</p>
-                    <ul class="sociais">
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-bottom">
-                    <p>copyright &copy;2020 codeOpacity. designed by <span class="nethu">andyhts</span></p>
-                </div>
-            </footer>
-        </section>
+        <footer>
+            <div class="footer-content">
+                <h3>code opacit</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae, accusamus laboriosam aut alias placeat similique eum doloribus fugit, deserunt dolorum. Totam eos dolores qui aspernatur culpa aliquam quod quas.</p>
+                <ul class="sociais">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2020 codeOpacity. designed by <span class="nethu">andyhts</span></p>
+            </div>
+        </footer>
+    </section>
     <script src="jav/menu-mob.js"></script>
     <script src="jav/rolagem.js"></script>
+    <script src="jav/filtra.js"></script>
 </body>
 </html>
